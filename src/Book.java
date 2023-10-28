@@ -1,15 +1,19 @@
-public class Book extends Author {
+public class Book {
     private String bookName;
     private int publishingYear;
+    private Author author;
 
-    public Book(String bookName, int publishingYear, String name) {
-        super(name);
+    public Book(String bookName, int publishingYear, Author author) {
         this.bookName = bookName;
         this.publishingYear = publishingYear;
+        this.author = author;
+    }
+
+    public Author getAuthor() {
+        return author;
     }
 
     public String getBookName() {
-
         return bookName;
     }
 
